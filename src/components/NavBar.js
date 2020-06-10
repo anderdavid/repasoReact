@@ -12,6 +12,11 @@ function NavBar(props) {
                         <li><a href="/repaso2">Repaso 2</a></li>
                     </ul>
                 </li>
+                <li>Conectividad
+                    <ul>
+                        <li><a href="/testGet">testGet</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     );

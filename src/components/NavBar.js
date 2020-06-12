@@ -18,6 +18,11 @@ function NavBar(props) {
                         <li><a href="/testPost">TestPost</a></li>
                     </ul>
                 </li>
+                <li>Redux
+                    <ul>
+                        <li><a href="/testRedux">testRedux</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     );

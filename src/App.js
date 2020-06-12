@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import {Provider} from 'react-redux'
+import store from './redux/store'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import Repaso1 from './components/Repaso1'
 import Repaso2 from './components/Repaso2'
@@ -7,13 +9,15 @@ import Home from './components/Home'
 import TestGet from './components/conectividad/TestGet'
 import TestPost from './components/conectividad/TestPost'
 import NavBar from './components/NavBar'
+import TestRedux from './components/test-redux/TestRedux';
+import IceCreamContainer from './components/test-redux/IceCreamContainer';
 
 
 
 function App() {
   return (
-  
-      <BrowserRouter>
+    <Provider store={store}>
+       <BrowserRouter>
       <div>
           <NavBar></NavBar>
           <Switch>
@@ -42,11 +46,21 @@ function App() {
               path="/testPost"
               render={()=><TestPost/>}
             />
+             <Route
+              exact
+              path="/testRedux"
+              render={()=>
+                <div className="App">
+                  <TestRedux/>
+                  <IceCreamContainer/>
+                </div> }
+            />
+           
           </Switch>
       </div>
       </BrowserRouter> 
-   
-  );
+    </Provider>
+   );
 }
 
 export default App;

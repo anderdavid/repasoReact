@@ -65,12 +65,6 @@ class TestGet extends Component {
             </div>
         );
     }
-    /* connect=()=>{
-        console.log('connect')
-        axios.get(this.url).then(res=>{
-            alert(JSON.stringify(res.data))
-        })
-    } */
 }
 
 export default TestGet;

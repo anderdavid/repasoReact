@@ -15,6 +15,7 @@ function NavBar(props) {
                 <li>Conectividad
                     <ul>
                         <li><a href="/testGet">testGet</a></li>
+                        <li><a href="/testPost">TestPost</a></li>
                     </ul>
                 </li>
             </ul>

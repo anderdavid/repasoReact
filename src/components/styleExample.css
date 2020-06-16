@@ -1,0 +1,11 @@
+.main{
+    background-color: blueviolet;
+    color:bisque;
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.main h1{
+    text-align: center;
+}

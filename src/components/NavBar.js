@@ -23,6 +23,11 @@ function NavBar(props) {
                         <li><a href="/testRedux">testRedux</a></li>
                     </ul>
                 </li>
+                <li>Styled
+                    <ul>
+                        <li><a href="/styledComponent">StyledComponent</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     );

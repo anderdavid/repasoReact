@@ -11,6 +11,7 @@ import TestPost from './components/conectividad/TestPost'
 import NavBar from './components/NavBar'
 import TestRedux from './components/test-redux/TestRedux';
 import IceCreamContainer from './components/test-redux/IceCreamContainer';
+import StyledComponent from './components/StyledComponent';
 
 
 
@@ -54,6 +55,11 @@ function App() {
                   <TestRedux/>
                   <IceCreamContainer/>
                 </div> }
+            />
+            <Route
+               exact
+               path="/styledComponent"
+               render={()=><StyledComponent/>}
             />
            
           </Switch>

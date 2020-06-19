@@ -13,7 +13,7 @@ import LoginForm from './repaso1-components/LoginForm';
 class Repaso1 extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <Hello></Hello>
                 <Hello2></Hello2>
                 <Car brand='ford' color='azul'></Car>

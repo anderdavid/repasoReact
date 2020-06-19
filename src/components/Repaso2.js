@@ -5,7 +5,7 @@ import Form from './repaso2-components/Form';
 class Repaso2 extends Component {
     render() {
         return (
-            <div>
+            <div class="container">
                 <Table></Table>
                 <Form></Form>
             </div>

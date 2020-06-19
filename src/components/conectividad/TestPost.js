@@ -20,7 +20,7 @@ class TestPost extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container">
                 <form onSubmit={this.save}>
                     <input type="text" name="nombre" value={this.state.nombre} onChange={this.InputChange} required/><br/>
                     <input type="text" name="apellido" value={this.state.apellido} onChange={this.InputChange} required/><br/>

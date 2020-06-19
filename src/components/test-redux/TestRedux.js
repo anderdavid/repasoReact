@@ -4,7 +4,7 @@ import {buycake} from '../../redux'
 
 function TestRedux(props) {
     return (
-        <div>
+        <div className="container">
             <h2>TestRedux</h2>
             <h3>cakeContainer</h3>
             <p>numOfCakes: {props.numOfCakes}</p>

@@ -4,7 +4,7 @@ import {buyIceCream} from '../../redux'
 
 function IceCreamContainer(props) {
     return (
-        <div>
+        <div className="container">
             <br/>
             <br/>
             <br/>

@@ -45,7 +45,7 @@ class TestGet extends Component {
         }
        
         return (
-            <div>
+            <div className="container">
               <table border='1'>
                   <thead>
                       <tr>

@@ -1,30 +1,30 @@
 import React from 'react';
+import './NavBar.css'
 
 
 function NavBar(props) {
     return (
-        <div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li>Repaso
-                    <ul>
-                        <li><a href="/repaso1">Repaso 1</a></li>
-                        <li><a href="/repaso2">Repaso 2</a></li>
-                    </ul>
-                </li>
-                <li>Conectividad
-                    <ul>
-                        <li><a href="/testGet">testGet</a></li>
-                        <li><a href="/testPost">TestPost</a></li>
-                    </ul>
-                </li>
-                <li>Redux
-                    <ul>
-                        <li><a href="/testRedux">testRedux</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+       <nav>
+           <ul>
+              <li><a href="#" className="item-menu">Repaso</a>
+                <ul>
+                    <li><a href="/repaso1" className="item-submenu">Repaso 1</a></li>
+                    <li><a href="/repaso2" className="item-submenu">Repaso 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#" className="item-menu">Conectividad</a>
+                <ul>
+                    <li><a href="/testGet" className="item-submenu">testGet</a></li>
+                    <li><a href="/testPost" className="item-submenu">TestPost</a></li>
+                </ul>
+              </li>
+              <li><a href="#" className="item-menu">TestRedux</a>
+                <ul>
+                    <li><a href="/testRedux" className="item-submenu">TestRedux</a></li>
+                </ul>
+              </li>
+           </ul>
+       </nav>
     );
 }
 

@@ -21,6 +21,7 @@ function NavBar(props) {
               <li><a href="#" className="item-menu">TestRedux</a>
                 <ul>
                     <li><a href="/testRedux" className="item-submenu">TestRedux</a></li>
+                    <li><a href="/userContainer" className="item-submenu">UserRedux</a></li>
                 </ul>
               </li>
            </ul>

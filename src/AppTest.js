@@ -7,11 +7,7 @@ import store from './redux/store'
 function AppTest(props) {
     return (
         <div>
-         {/*  <MenuResponsive/> */}
-         <Provider store={store}>
-            <UserContainer/>
-         </Provider>
-         
+          <MenuResponsive/>
         </div>
     );
 }

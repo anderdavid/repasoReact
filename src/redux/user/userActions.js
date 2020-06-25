@@ -14,10 +14,10 @@ export const fetchUserRequest =()=>{
     }
 }
 
-const fetchUserSuccess =users=>{
+const fetchUserSuccess =data=>{
     return{
         type:FETCH_USER_SUCCESS,
-        payload: users
+        payload: data
     }
 }
 
@@ -30,11 +30,11 @@ const fetchUserFailure =error=>{
 
 export const fetchUsers=()=>{
     return (dispatch)=>{
-        dispatch(fetchUserRequest)
-        axios.get('https://jsonplaceholder.typicode.com/users').then(
+        dispatch(fetchUserRequest())
+        axios.get('http://localhost:3003/user').then(
             response=>{
-                const users = response.data
-                dispatch(fetchUserSuccess(users))
+                const data = response.data
+                dispatch(fetchUserSuccess(data))
             }
         ).catch(
             error=>{

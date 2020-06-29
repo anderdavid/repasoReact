@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
 import TestBootStrap from './components/TestBootStrap';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
+    <NavBar/>
    /*  <Hello></Hello> */
-    <TestBootStrap />
+   /*  <TestBootStrap /> */
    /*  <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

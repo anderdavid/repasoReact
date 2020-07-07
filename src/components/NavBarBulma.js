@@ -9,7 +9,7 @@ function NavBarBulma(props) {
     
     return (
         <div>
-            <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
@@ -25,11 +25,13 @@ function NavBarBulma(props) {
                     </a>
                 </div>
                 <div className={`navbar-menu ${isActiveMenu ? "is-active" : ""}`}>
+               {/*  <div className={`navbar-menu is-active`}> */}
                     <div className="navbar-start">
                         <a className="navbar-item">
                             Home
                         </a>
                         <div className={`navbar-item has-dropdown ${isActive ? "is-active" : ""}`} >
+                        {/* <div className={`navbar-item has-dropdown is-active`} > */}
                             <a className="navbar-link"
                                 onClick={()=>{
                                     setisActive(!isActive)
@@ -37,8 +39,9 @@ function NavBarBulma(props) {
                             >
                                 Usuarios
                             </a>
-
-                            <div className="navbar-dropdown ">
+                             {/* <div className="navbar-dropdown" style={{display:'none'}}> */}
+                            <div className="navbar-dropdown" style={{display:`${isActive?"block":"none"}`}}>
+                           
                                 <a className="navbar-item">
                                     Ver Usuario
                                 </a>
